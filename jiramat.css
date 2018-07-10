@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+#logo {
+	padding-right: 53px;
+}
+.btn {
+	padding-top: 3px;
+}
+.banner {
+	background-image: url("jumbotron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.nav-item {
+    padding-top: 14px;
+    font-size: 18pt;
+}
+.table td {
+    text-align: center;
+}
+.table th {
+    text-align: center;
+}
+.editor-img {
+    width: 100%;
+}
+#pdf-editor {
+    height: 100%;
+    min-height: 100%;
+}
+#outer {
+    height: 100%;
+}
+html, body {
+    min-height: 90%;
+    height: 100%;
+}
+.hideme {
+    display:none;
+}
+.btn-outline-primary {
+    width: 200px;
+}
+.dropdown-menu {
+    width: 200px;
+    border-width: 2px;
+    border-color: gray;
+}

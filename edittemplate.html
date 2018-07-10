@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
+
+	<link rel="stylesheet" href="jiramat.css" />
+	<title>JIRAMAT - DTRA®</title>
+</head>
+
+<body>
+	<div class="container w-100" id="outer">
+
+		<div class="container">
+			<div class="masthead">
+				<nav class="navbar navbar-light bg-faded rounded mb-3">
+					<ul class="nav justify-content-center">
+						<li class="navbar-brand">
+							<a href="landing.html">
+								<img class="nav-link" id="logo" src="https://i.imgur.com/jF6ULfq.png" />
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="listpdfs.html">PDFs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="templates.html">Templates</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="reports.html">Reports</a>
+						</li>
+						<li class="nav-item">
+							<a id="admin-nav" class="nav-link disabled" href="admin.html">Admin</a>
+						</li>
+						<li class="nav-item">
+							<a id="btn-logout" class="nav-link" style="color:red;" href="index.html">Logout</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							Home
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="blanktemplate.html">New</a>
+							<ul>
+								<a class="dropdown-item" href="blanktemplate.html">Blank</a>
+							</ul>
+							<a class="dropdown-item" href="#">Open</a>
+							<ul>
+								<a class="dropdown-item" href="#">Template</a>
+								<a class="dropdown-item" href="#">Excel</a>
+								<a class="dropdown-item" href="#">Word</a>
+								<a class="dropdown-item" href="#">Access</a>
+							</ul>
+							<a class="dropdown-item" href="#">Import</a>
+							<ul>
+								<a class="dropdown-item" href="#">PDF</a>
+							</ul>
+							<a class="dropdown-item" href="#" target="#modal" data-toggle="modal" data-target="#theModal">Save</a>
+							<a class="dropdown-item" href="#" target="#modal" data-toggle="modal" data-target="#theModal2">Save As...</a>
+							<ul>
+								<a class="dropdown-item" href="#">Template</a>
+								<a class="dropdown-item" href="#">Excel</a>
+								<a class="dropdown-item" href="#">Word</a>
+								<a class="dropdown-item" href="#">Access</a>
+							</ul>
+							<a class="dropdown-item" href="#">Account</a>
+							<ul>
+								<a class="dropdown-item" href="#">View Account Info</a>
+							</ul>
+
+							<a class="dropdown-item" href="#">Screen View</a>
+							<ul>
+								<a class="dropdown-item" href="#">Full Screen</a>
+								<a class="dropdown-item" href="#">Collated</a>
+								<a class="dropdown-item" href="#">Side By Side</a>
+								<a class="dropdown-item" href="#">Top To Bottom</a>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							Edit
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Invoice</a>
+							<a class="dropdown-item" href="#">Template</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							Template
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item btn-templatemenu" href="#">New Template...</a>
+							<a class="dropdown-item btn-templatemenu" href="#">Custom Templates...</a>
+							<a class="dropdown-item btn-templatemenu" href="#">Generic Templates</a>
+							<ul>
+								<a class="dropdown-item btn-templatemenu" href="#">Generic Invoice</a>
+								<a class="dropdown-item btn-templatemenu" href="#">Generic Contract</a>
+								<a class="dropdown-item btn-templatemenu" href="#">Generic Notice</a>
+								<a class="dropdown-item btn-templatemenu" href="#">Generic Other...</a>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							Duplicates
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Check For Duplicates...</a>
+							<a class="dropdown-item" href="#">Keep Duplicates</a>
+							<a class="dropdown-item" href="#">Discard Duplicates</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<button type="button" class="btn btn-success btn-lg" id="btn-apply">Apply Template</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+
+		<div id="pdf-editor" class="container">
+			<img src="editor-panel.PNG" class="editor-img" />
+			<object width="100%" height="100%" data="pdfexample.pdf" type="application/pdf">
+				Could not display PDF.
+			</object>
+		</div>
+		<!-- Site footer -->
+		<footer class="footer">
+			<p>&copy; JIRAMAT 2018</p>
+		</footer>
+
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" value="1" id="admin-view">
+			<label class="form-check-label" for="admin-view">Admin View</label>
+		</div>
+	</div>
+	<!-- /container -->
+
+
+
+
+
+
+	<!-- Modal 1-->
+	<div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Success!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Template Saved
+				</div>
+				<div class="modal-footer">
+					<a href="listpdfs.html">
+						<button type="button" class="btn btn-success" data-dismiss="modal" id="btn-modal-close">Continue</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Modal 2 -->
+	<div class="modal fade" id="theModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle2">Save As...</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Name:
+					<input type="text" autofocus value="CompanyCorp_7-4-2016_003">
+				</div>
+				<div class="modal-footer">
+					<a href="listpdfs.html">
+						<button type="button" class="btn btn-success" data-dismiss="modal" id="btn-modal-close">Save</button>
+					</a>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-modal-close">Back</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+		$(function () {
+			$('#login-submit').click(function () {
+				$(location).attr('href', 'landing.html');
+			});
+
+			$('#login-forgot').click(function () {
+				console.log("Forgot button pushed");
+				alert("What am I, tech support?");
+			});
+			$('#admin-button').click(function () {
+				alert("You do not have access to this section.");
+			});
+			$("#admin-view").click(function () {
+				if ($(this).is(':checked')) {
+					$("#admin-nav").removeClass("disabled");
+					$("#ab1").removeClass("btn-secondary");
+					$("#ab2").removeClass("btn-secondary");
+					$("#ab1").addClass("btn-primary");
+					$("#ab2").addClass("btn-primary");
+					console.log("admin was checked");
+				} else {
+					$("#admin-nav").addClass("disabled");
+					$("#ab1").removeClass("btn-primary");
+					$("#ab2").removeClass("btn-primary");
+					$("#ab1").addClass("btn-secondary");
+					$("#ab2").addClass("btn-secondary");
+					console.log("admin was un-checked");
+				}
+			});
+			$(".dropdown-item").click(function () {
+				$("#drop-type").html($(this).html());
+			});
+			$("#btn-back").click(function () {
+				window.history.back();
+			});
+			$("#btn-upload").click(function () {
+				alert("Button Clicked");
+			});
+			$("#btn-apply").click(function () {
+				$(location).attr('href', 'applytemplate.html');
+			})
+			$(".btn-templatemenu").click(function () {
+				$(location).attr('href', 'templates.html');
+			});
+			$("#btn-logout").click(function () {
+				$(location).attr('href', 'index.html');
+			});
+
+		});
+
+
+	</script>
+
+</body>
+
+</html>
